@@ -14,7 +14,7 @@ body{
 
 .slider{
     position: relative;
-    background: #000000;
+    background: white;
     width: 800px;
     min-height: 500px;
     margin: 20px;
@@ -26,7 +26,13 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
+    clip-path: inset(1% 99% 0 1%);
 }
+
+.slider .slide.active{
+    clip-path: inset(0 0 0 0);
+    transition: 2s;
+} 
 
 .slider .slide img{
     position: absolute;
