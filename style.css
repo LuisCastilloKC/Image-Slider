@@ -90,6 +90,10 @@ body{
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
 }
 
+.navigation-visibility .slide-icon.active{
+    background: #013f73;
+}
+
 @media (max-width: 900px){
     .slider{
         width: 100%;
