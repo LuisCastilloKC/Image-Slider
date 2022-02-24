@@ -42,3 +42,12 @@ prevBtn.addEventListener("click", () => {
     slideIcons[slideNumber].classList.add("active")
 
 })
+
+let playSlider;
+
+let repeater = () => {
+    playSlider = setInterval(function(){
+
+    });
+}
+
