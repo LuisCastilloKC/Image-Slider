@@ -65,3 +65,4 @@ let repeater = () => {
     }, 4000);
 }
 
+repeater()
