@@ -40,6 +40,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider:hover .navigation{
+    opacity: 1;
 }
 
 .prev-btn, .next-btn{
@@ -48,4 +54,15 @@ body{
     color: grey;
     background: rgb(255, 255, 255,0.8);
     padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.next-btn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
