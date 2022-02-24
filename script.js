@@ -1,7 +1,8 @@
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
+const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
-const slideIcons = document.querySelectorAll(".slide-icon")
+const slideIcons = document.querySelectorAll(".slide-icon");
 const numberOfSlides = slides.length;
 let slideNumber = 0;
 
@@ -66,3 +67,8 @@ let repeater = () => {
 }
 
 repeater()
+
+
+slider.addEventListener("mouseover", () => {
+    clearInterval(playSlider)
+})
