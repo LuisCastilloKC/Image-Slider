@@ -62,6 +62,6 @@ let repeater = () => {
     
         slides[slideNumber].classList.add("active")
         slideIcons[slideNumber].classList.add("active")
-    });
+    }, 4000);
 }
 
