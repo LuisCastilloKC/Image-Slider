@@ -47,7 +47,21 @@ let playSlider;
 
 let repeater = () => {
     playSlider = setInterval(function(){
-
+        slides.forEach((slide) => {
+            slide.classList.remove("active")
+        })
+        slideIcons.forEach((slideIcon) => {
+            slideIcon.classList.remove("active")
+        })
+    
+        slideNumber++;
+    
+        if(slideNumber > (numberOfSlides - 1)){
+            slideNumber = 0;
+        }
+    
+        slides[slideNumber].classList.add("active")
+        slideIcons[slideNumber].classList.add("active")
     });
 }
 
